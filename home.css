@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: 'Comme', sans-serif;
+  background-color: #1f0040;
+  color: white;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(61, 61, 61, 0.5);
+  backdrop-filter: blur(5px);
+  padding: 20px 0;
+  z-index: 1000;
+  border-radius: 100px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+
+.nav-items li a.active,
+.nav-items li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 160px 20px 60px;
+  text-align: left;
+}
+
+.intro h2 {
+  font-size: 32px;
+}
+
+.intro h1 {
+  font-size: 48px;
+  color: #ffb6ff;
+}
+
+.intro h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cv-btn {
+  padding: 12px 24px;
+  background: #ffb6ff;
+  color: #1f0040;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.profile-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.skills-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.skill img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.skill img:hover {
+  transform: scale(1.1);
+}
